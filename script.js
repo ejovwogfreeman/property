@@ -103,7 +103,7 @@ if (registerForm) {
       if (res.ok && data.token) {
         localStorage.setItem("token", data.token);
         alert("Registration successful!");
-        window.location.href = "dashboard.html";
+        window.location.href = "verify.html";
       } else {
         alert(data.message || "Registration failed");
       }
