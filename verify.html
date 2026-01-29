@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -97,12 +97,12 @@
 
         try {
           const response = await fetch(
-            "http://localhost:8000/api/auth/verify",
+            "https://property-listing-api-wreb.vercel.app/api/auth/verify",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, code }),
-            }
+            },
           );
 
           const data = await response.json();
